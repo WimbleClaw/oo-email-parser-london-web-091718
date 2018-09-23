@@ -7,7 +7,7 @@ class EmailParser
   end
 
   def parse
-    @emails.split(/, /).uniq
+    @emails.split(/[\s,]+/).uniq #The [] say to match any character in that set. The + is there because you want to treat multiple spaces between emails as a single separator.
   end
 
 end
