@@ -2,7 +2,7 @@
 
 class EmailParser
 
-  attr_reader :emails
+  attr_accessor :emails
 
   def initialized(emails)
     @emails = emails
